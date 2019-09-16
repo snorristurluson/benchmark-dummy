@@ -1,7 +1,7 @@
 package helpers;
 
 public class BusyWait implements Benchmark {
-    private static int EXTRAWAIT = 3;
+    private static int EXTRAWAIT = 4;
 
     @Override
     public void run(String param) {
