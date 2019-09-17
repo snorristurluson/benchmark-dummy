@@ -5,6 +5,7 @@ public class BusyWait implements Benchmark {
 
     @Override
     public void run(String param) {
+        System.out.println(String.format("Running BusyWait(%s)", param));
         int duration = Integer.parseInt(param);
         long start = System.currentTimeMillis();
         long end = start + (duration + EXTRAWAIT) * 1000;
@@ -12,5 +13,6 @@ public class BusyWait implements Benchmark {
         while (System.currentTimeMillis() < end) {
             counter++;
         }
+        System.out.println("BusyWait done");
     }
 }
