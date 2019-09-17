@@ -2,6 +2,7 @@ package main;
 
 import helpers.Benchmark;
 import helpers.BusyWait;
+import helpers.FileMaker;
 import helpers.TimeWaster;
 
 import java.util.logging.Logger;
@@ -18,6 +19,8 @@ public class Main {
             bm = new TimeWaster();
         } else if (benchmark.equals("BusyWait")) {
             bm = new BusyWait();
+        } else if (benchmark.equals("FileMaker")) {
+            bm = new FileMaker();
         }
 
         if (bm != null) {
