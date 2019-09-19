@@ -1,7 +1,7 @@
 package helpers;
 
 public class TimeWaster implements Benchmark {
-    private static int EXTRAWAIT = 4;
+    private static int EXTRAWAIT = 7;
 
     @Override
     public void run(String param) {
