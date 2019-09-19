@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 public class FileMaker implements Benchmark {
-    private static int EXTRA = 4;
+    private static int EXTRA = 1;
 
     @Override
     public void run(String param) {
